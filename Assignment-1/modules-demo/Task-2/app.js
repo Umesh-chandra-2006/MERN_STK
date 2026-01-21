@@ -1,3 +1,5 @@
+import util from "util";
+
 import {
   getAllProducts,
   searchProducts,
@@ -51,4 +53,4 @@ console.log("Cart Total:", getCartTotal());
 // 8. Checkout with coupon
 console.log("\n=== Checkout ===");
 const order = processPayment("upi", "WELCOME10");
-console.log(order);
+console.log(util.inspect(order, { depth:null }));
