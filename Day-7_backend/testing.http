@@ -1,0 +1,44 @@
+//read all users
+GET http://localhost:3000/user-api/users
+
+//create a new user
+###
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "username": "John Doe",
+    "password": "doenewpasswordhashed",
+    "email": "doejohn@gmail.com",
+    "cart":[]
+}
+
+
+
+### products
+
+//get all products
+GET http://localhost:3000/product-api/products
+
+###
+//create a new product
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productName": "Mobile",
+    "price": 40000,
+    "brand": "OnePlus"
+}
+
+###
+POST http://localhost:3000/user-api/users/<userid>/<prodid>
+Content-Type: application/json
+
+###
+PUT http://localhost:3000/user-api/user-cart/user-id/69819490297584d842d240fd/product-id/69819492297584d842d240ff
+Content-Type: application/json
+
+
+###
+GET http://localhost:3000/user-api/users/69817b070bd32741e927c47e
