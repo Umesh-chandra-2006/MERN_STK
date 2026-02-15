@@ -1,0 +1,35 @@
+body {
+  background-color: #ebefd9;
+  font-family: Arial, sans-serif;
+  width: 800px;
+  margin: 40px auto;
+}
+
+h1 {
+  font-size: 32px;
+}
+h3 {
+  clear: left;
+}
+img {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+ol,
+ul {
+  font-size: 18px;
+}
+
+a {
+  color: red;
+}
+
+hr {
+  margin-top: 20px;
+}
