@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  margin: auto;
+  padding: 100px;
+  background-color: lightgray;
+}
+
+jumbotron h1 {
+  font-size: 5rem;
+  font-weight: lighter;
+}
+
+jumbotron p {
+  font-size: 1.2rem;
+  height: 100px;
+  padding: 20px 0 20px 0;
+}
+
+jumbotron button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.support {
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.support .card {
+  margin-top: 10px;
+  width: 300px;
+  height: 250px;
+  text-align: left;
+}
+
+.support .card h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.support .card p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.support .card button{
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+hr{
+  margin: 20px 5%;
+}
+
+p.footer{
+  font-size: 1.3rem;
+  margin: 0 5%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  jumbotron {
+    padding: 50px 20px;
+    height: auto;
+  }
+  
+  jumbotron h1 {
+    font-size: 2.5rem;
+  }
+  
+  jumbotron p {
+    font-size: 1rem;
+    height: auto;
+  }
+  
+  jumbotron button {
+    width: 150px;
+    height: auto;
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+
+  .support {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  
+  .support .card {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  jumbotron {
+    padding: 30px 15px;
+  }
+  
+  jumbotron h1 {
+    font-size: 2rem;
+  }
+  
+  jumbotron p {
+    font-size: 0.9rem;
+    padding: 15px 0;
+  }
+  
+  jumbotron button {
+    width: 130px;
+    font-size: 0.9rem;
+  }
+
+  .support .card {
+    width: 95%;
+  }
+  
+  .support .card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .support .card p {
+    font-size: 1rem;
+  }
+  
+  .support .card button {
+    font-size: 1rem;
+  }
+
+  p.footer {
+    font-size: 1rem;
+  }
+}

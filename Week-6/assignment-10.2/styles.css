@@ -1,0 +1,191 @@
+/* General Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: darkblue;
+  padding: 15px 50px;
+  font-size: 1.2rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  align-items: center;
+  list-style-type: none;
+}
+
+header ul a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(72, 241, 233);
+  font-weight: bold;
+}
+
+header ul a:hover {
+  color: orange;
+}
+
+main {
+  background-color: #48f1e9;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4% 50px;
+  font-size: 1.2rem;
+}
+
+main .context h1{
+  font-size:1.5rem;
+}
+
+.context h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.context h1 p {
+  font-size: 1.1rem;
+  max-width: 450px;
+}
+
+.logo img {
+  width: 250px;
+}
+
+.grid {
+  display: flex;
+  background-color: white;
+  color: black;
+  min-height: 200px;
+}
+
+.grid .card {
+  flex: 1;
+  padding: 40px;
+}
+
+.grid .card h2 {
+  color: darkblue;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.grid .card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.grid .card img{
+  padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  header ul {
+    width: 100%;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  main {
+    padding: 30px 20px;
+  }
+
+  .context h1 {
+    font-size: 2.5rem;
+  }
+
+  main .context h1 {
+    font-size: 1.3rem;
+  }
+
+  .context h1 p {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .grid .card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  header ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  header ul a {
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 20px 15px;
+    font-size: 1rem;
+  }
+
+  .context h1 {
+    font-size: 2rem;
+  }
+
+  main .context h1 {
+    font-size: 1.1rem;
+  }
+
+  .context h1 p {
+    font-size: 0.9rem;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .grid .card {
+    padding: 20px 15px;
+  }
+
+  .grid .card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .grid .card p {
+    font-size: 0.85rem;
+  }
+}

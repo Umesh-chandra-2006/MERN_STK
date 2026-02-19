@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  background-color: white;
+  color: #ff0000;
+  padding: 15px 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+main {
+  background-color: #ff0000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 50px;
+  height: 100%;
+  min-height: 550px;
+}
+
+.context h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.context p {
+  font-size: 1.1rem;
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+.logo img {
+  width: 250px;
+}
+
+.grid {
+  display: flex;
+  background-color: #3b0a0a;
+  color: #d1d1d1;
+  min-height: 340px;
+}
+
+.grid .card {
+  flex: 1;
+  padding: 40px;
+  border-right: 1px solid #ff0000;
+}
+
+.grid .card:last-child {
+  border-right: none;
+}
+
+.grid .card h3 {
+  color: white;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.grid .card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 50px 20px;
+    min-height: 300px;
+    text-align: center;
+  }
+
+  .context h1 {
+    font-size: 2.5rem;
+  }
+
+  .context p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .logo {
+    margin-top: 30px;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .grid .card {
+    border-right: none;
+    border-bottom: 1px solid #ff0000;
+    padding: 30px 20px;
+  }
+
+  .grid .card:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 30px 15px;
+  }
+
+  .context h1 {
+    font-size: 2rem;
+  }
+
+  .context p {
+    font-size: 0.9rem;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .grid .card {
+    padding: 25px 15px;
+  }
+
+  .grid .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .grid .card p {
+    font-size: 0.85rem;
+  }
+}
