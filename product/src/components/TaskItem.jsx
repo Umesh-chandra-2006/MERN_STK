@@ -8,7 +8,7 @@ function TaskItem({ task, onDelete, onToggle }) {
   };
 
   return (
-    <div className="bg-white p-4 rounded border-l-4 border-blue-500 flex justify-between items-center shadow-sm hover:shadow-md transition">
+    <div className="bg-white p-4 rounded border border-gray-200 flex justify-between items-center">
       <div className="flex-1">
         <div className="flex items-center gap-3">
           <input
@@ -28,7 +28,7 @@ function TaskItem({ task, onDelete, onToggle }) {
 
       <button
         onClick={() => onDelete(task.id)}
-        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-4"
+        className="bg-red-600 text-white py-2 px-4 rounded ml-4"
       >
         Delete
       </button>

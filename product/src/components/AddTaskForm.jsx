@@ -54,8 +54,8 @@ function AddTaskForm({ onAddTask }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-4 rounded border-2 border-gray-300 mb-6">
-      <h2 className="text-xl font-bold mb-4">Add New Task</h2>
+    <form onSubmit={handleSubmit} className="bg-white p-4 rounded border border-gray-200 mb-6">
+      <h2 className="text-xl font-bold mb-4">Add Task</h2>
 
       <div className="mb-4">
         <label className="block text-sm font-semibold mb-2">Task Title</label>
@@ -88,7 +88,7 @@ function AddTaskForm({ onAddTask }) {
 
       <button
         type="submit"
-        className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="w-full bg-blue-600 text-white py-2 px-4 rounded"
       >
         Add Task
       </button>
